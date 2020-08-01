@@ -1,0 +1,66 @@
+title: Post
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: excerpt
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: Excerpt
+      -
+        handle: long_content
+        field:
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          type: bard
+          localizable: false
+          listable: hidden
+          display: 'Long Content'
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+      -
+        handle: topics
+        field:
+          type: taxonomy
+          taxonomy: topics
+          display: Topics
+          mode: select

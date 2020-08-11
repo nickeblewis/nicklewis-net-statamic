@@ -1,0 +1,5 @@
+title: Posts
+sections:
+  main:
+    display: Main
+    fields: {  }

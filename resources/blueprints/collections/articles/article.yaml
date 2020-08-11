@@ -57,7 +57,7 @@ sections:
           type: bard
           localizable: false
           listable: hidden
-          display: Bard
+          display: 'Long Content'
           sets:
             new_set:
               display: 'New Set'
